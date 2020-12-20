@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^adriandexter.com
+RewriteRule ^(.*) https://borkthestork.github.io/adriandexterdotcom/ [P]
