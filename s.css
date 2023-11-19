@@ -1,12 +1,78 @@
+
 body { 
+    
+    font-family: Helvetica;
+    background-color:black; 
+    cursor:  url(god.png),url(https://adriandexter.com/god.png), auto;
+
+
  
 
-    background-color:rgb(0, 0, 0); 
-    cursor:  url(god.png),url(https://adriandexter.com/god.png), auto;
+    /* background-image: url('https://images.squarespace-cdn.com/content/v1/61aa6a6c95cc425ea4d4f25d/a2d9367f-e636-4085-b67c-d1fa87c0b190/ALL_THAT_IS_SOLID.png?format=2500w'); */
+    /*background-size: cover; */
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
   }
   
-  h1 {
-    color: navy;
-    margin-left: 20px;
+
+  @keyframes breath {
+    from { 
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05) 
+    }
   }
- 
+   
+  #bkg{
+    width: 100vw;
+    height: 100vh;
+    animation: breath 8s ease-in-out alternate infinite;
+    background: url('https://images.squarespace-cdn.com/content/v1/61aa6a6c95cc425ea4d4f25d/a2d9367f-e636-4085-b67c-d1fa87c0b190/ALL_THAT_IS_SOLID.png?format=2500w');
+    background-size: cover;
+  } 
+  
+  
+  h1 {
+    color: white;
+    margin-left: 0px;
+  }
+
+  .wrap {
+    width: 1060px;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
+}
+.text_over_image {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+}
+
+div.counter {
+  position: relative;
+  display: inline-block;
+}
+div.counter span {
+  color: white;
+  position: absolute;    
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+div.counter span:before {
+ display: inline-block;
+ vertical-align: middle;
+ height: 100%;
+ width: 100%;
+ content: '';
+}
